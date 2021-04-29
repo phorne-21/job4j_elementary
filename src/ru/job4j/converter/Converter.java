@@ -6,8 +6,6 @@ public class Converter {
         return value / 70;
     }
 
-    @SuppressWarnings("checkstyle:EmptyLineSeparator")
-
     public static int rubleToDollar(int value) {
         return value / 60;
     }
