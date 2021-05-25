@@ -10,7 +10,7 @@ public class SwitchArrayTest {
     public void whenSwap0To3() {
         int[] input = {1, 2, 3, 4};
         int source = 0;
-        int dest = input.length - 1;
+        int dest = 3;
         int[] result = SwitchArray.swap(input, source, dest);
         int[] expected = {4, 2, 3, 1};
         Assert.assertArrayEquals(expected, result);
@@ -20,7 +20,7 @@ public class SwitchArrayTest {
     public void whenSwap2To3() {
         int[] input = {5, 3, 1, 10};
         int source = 2;
-        int dest = input.length - 1;
+        int dest = 3;
         int[] result = SwitchArray.swap(input, source, dest);
         int[] expected = {5, 3, 10, 1};
         Assert.assertArrayEquals(expected, result);
