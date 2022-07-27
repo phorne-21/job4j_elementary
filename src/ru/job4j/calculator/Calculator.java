@@ -1,6 +1,9 @@
 package ru.job4j.calculator;
 
 public class Calculator {
+
+    private static int x = 5;
+
     public static void main(String[] args) {
         int one = 1;
         int two = 2;
@@ -15,5 +18,25 @@ public class Calculator {
         System.out.println(div);
         System.out.println(minus);
         System.out.println(time);
+    }
+
+    public  static int sum(int num) {
+        return x + num;
+    }
+
+    public int multiply(int num) {
+        return num * x;
+    }
+
+    public static int minus(int num) {
+        return num - x;
+    }
+
+    public int divide(int num) {
+        return  num / x;
+    }
+
+    public int sumAllOperation(int num) {
+        return sum(num) + multiply(num) + minus(num) + divide(num);
     }
 }
